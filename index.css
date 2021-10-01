@@ -5,10 +5,6 @@
   src: url("./fontes/idroid.otf") format("opentype");
   font-weight: normal;
 }
-* {
-  padding: 0;
-  margin: 0;
-}
 
 body {
   font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -27,7 +23,8 @@ header {
 
 header h1 {
   color: #ffffff;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Android";
+  font-size: 26px;
   text-align: center;
 }
 
@@ -51,13 +48,24 @@ nav a {
 main {
   background-color: #ffffff;
   padding: 20px;
-  margin: 0 80px;
+  margin: auto;
+  min-width: 300px;
+  max-width: 1000px;
+}
+
+main img {
+  width: 100%;
+}
+.pequena {
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
 .noticias h1 {
   background: linear-gradient(230.65deg, #3ddc84 27.49%, #2fa866 83.19%);
   border-radius: 5px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Android";
   font-size: 26px;
   padding: 5px;
   font-weight: normal;
@@ -124,6 +132,10 @@ aside ul {
   list-style-type: "\2714\0020\0020";
   display: grid;
   grid-template-columns: 50% 50%;
+}
+
+aside li {
+  line-height: 1.5em;
 }
 
 .final {
